@@ -24,7 +24,7 @@ def query_queue(queue_name):
         return -1
 
     print 'queue name = %s' % queueInfo.queue
-    print 'queue description = %s' % queueInfo.description; 
+    print 'queue description = %s' % queueInfo.description
 
     return 0
 
@@ -32,7 +32,7 @@ def printQueueInfo():
     if lsf.lsb_init("test") > 0:
         return -1
 
-    strArr = lsf.new_stringArray(2); #array length is 2
+    strArr = lsf.new_stringArray(2) #array length is 2
     lsf.stringArray_setitem(strArr, 0, "normal")
     lsf.stringArray_setitem(strArr, 1, "short")
 
