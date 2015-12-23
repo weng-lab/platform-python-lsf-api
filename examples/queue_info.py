@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 from pythonlsf import lsf
 
@@ -32,7 +32,7 @@ def printQueueInfo():
     if lsf.lsb_init("test") > 0:
         return -1;
 
-    strArr = lsf.new_stringArray(2); //array length is 2
+    strArr = lsf.new_stringArray(2); #array length is 2
     lsf.stringArray_setitem(strArr, 0, "normal");
     lsf.stringArray_setitem(strArr, 1, "short");
 
@@ -45,5 +45,5 @@ def printQueueInfo():
     
 if __name__ == '__main__':
     print("LSF Clustername is :", lsf.ls_getclustername())
-    print(query_queue("normal"))
+    print(query_queue("short"))
     printQueueInfo()

@@ -1,8 +1,9 @@
-#!/usr/local/bin/python2.7
+#!/usr/bin/env python
 
 from pythonlsf import lsf
 
 print '\n Hosts in cluster: ', lsf.get_host_names()
+print 'n: %d' % len(lsf.get_host_names())
 
 print '\n Clustername: ', lsf.ls_getclustername(), '\n'
 
