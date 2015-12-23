@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 def queryHostGroupInfo():
     """
     "query host group info"
